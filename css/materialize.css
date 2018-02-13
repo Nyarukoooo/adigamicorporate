@@ -8259,7 +8259,8 @@ input[type=range]:focus::-ms-fill-upper {
   height: 8px;
   width: 8px;
   margin: 24px 4px;
-  background-color: rgba(89, 89, 89, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: background-color .3s;
   transition: background-color .3s;
   border-radius: 50%;
 }
