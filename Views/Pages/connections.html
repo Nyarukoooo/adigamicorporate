@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Adigmai</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="../../css/materialize.min.css">
+      <link rel="stylesheet" href="../../css/init.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="../../js/materialize.min.js"></script>
+      <!-- Import icons-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body class="grey lighten-5">
+      <!--navbar dropdown-->
+      <ul id="navbar-dropdown" class="dropdown-content">
+        <li><a href="../../Views/Pages/setting.html">Settings</a></li>
+        <li class="divider"></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+      <!--side-nav dropdown-->
+      <ul id="side-nav-dropdown" class="dropdown-content">
+        <li><a href="../../Views/Pages/setting.html">Settings</a></li>
+        <li class="divider"></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+      <!--navbar-->
+      <nav class="blue-grey">
+        <div class="class navwrapper container">
+          <img src="../../img/adigami-icon.ico">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="../../Views/Pages/dashboard.html">DASHBOARD</a></li>
+            <li class="active"><a href="#!">CONNECTIONS</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="navbar-dropdown">USER<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <br>
+            <li><a href="../../Views/Pages/dashboard.html">Dashboard</a></li>
+            <li class="active"><a href="#!">Connections</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="side-nav-dropdown">User<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <br>   
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title red-text text-accent-2"><i class="material-icons left">filter_drama</i>CONNECTIONS<a href="../../Views/Pages/newconnection.html"><button class="right btn waves-effect waves-light red accent-2 modal-trigger" type="submit" name="action"><i class="material-icons left">add</i>CONNECTION</button></a></span>
+                <br>
+                <table class="highlight bordered editable">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Data Source</th>
+                      <th>Last Modified</th>
+                    </tr>
+                  </thead>
+                  <tbody id="connection_list">
+                   <tr>
+                      <td class="editable">AdWords for Acme, Inc.</td>
+                      <td>Google AdWords</td>
+                      <td>11/08/2017</td>
+                      <td><i class="material-icons" title="Edit">edit</i></td>
+                      <td><i class="material-icons" title="Delete">delete</i></td>
+                    </tr>
+                    <tr>
+                      <td class="editable">Zain</td>
+                      <td>Google AdWords</td>
+                      <td>11/06/2017</td>
+                      <td><i class="material-icons" title="Edit">edit</i></td>
+                      <td><i class="material-icons" title="Delete">delete</i></td>
+                    </tr>
+                    <tr>
+                      <td class="editable">Noah Kagan</td>
+                      <td>Facebook Ads</td>
+                      <td>11/21/2017</td>
+                      <td><i class="material-icons" title="Edit">edit</i></td>
+                      <td><i class="material-icons" title="Delete">delete</i></td>
+                    </tr>
+                    <tr>
+                      <td class="editable">Contests</td>
+                      <td>Facebook Ads</td>
+                      <td>11/19/2017</td>
+                      <td><i class="material-icons" title="Edit">edit</i></td>
+                      <td><i class="material-icons" title="Delete">delete</i></td>
+                    </tr>
+                    <tr>
+                      <td class="editable">Dail Deals</td>
+                      <td>Facebook Ads</td>
+                      <td>12/04/2017</td>
+                      <td><i class="material-icons" title="Edit">edit</i></td>
+                      <td><i class="material-icons" title="Delete">delete</i></td>
+                    </tr>
+                    <tr>
+                      <td class="editable">Evergreens</td>
+                      <td>DFP</td>
+                      <td>12/02/2017</td>
+                      <td><i class="material-icons" title="Edit">edit</i></td>
+                      <td><i class="material-icons" title="Delete">delete</i></td>
+                    </tr>
+                    <tr>
+                      <td class="editable">Free Deals</td>
+                      <td>DFP</td>
+                      <td>11/23/2017</td>
+                      <td><i class="material-icons" title="Edit">edit</i></td>
+                      <td><i class="material-icons" title="Delete">delete</i></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>                
+      </div>
+          
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="../../js/mindmup-editabletable.js"></script>
+      <script type="text/javascript" src="../../js/materialize.min.js"></script>
+      <script src="../../js/init.js"></script>
+      <script src="../../js/connection.js"></script>
+
+    </body>
+  </html>
